@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 public class MyStack {
-	List stack = new ArrayList<>();
+	
+	ArrayList<String> stack = new ArrayList<String>();
 
 	public void push(String element) {
 		stack.add(element);

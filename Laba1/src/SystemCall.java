@@ -1,18 +1,18 @@
-import java.util.Arrays;
 
-import java.util.List;
 
-public class SystemCall {
-	private List<String> Arguments;	
-	public SystemCall(String... args) {
-		Arguments = Arrays.asList(args);
+public class SystemCall {	
+	private Arguments arguments;
+	public SystemCall(Arguments arguments) {
+		this.arguments = arguments;
 	}
 
-	public List getArgs(){
-		return Arguments;
+	public Arguments getArgs() {
+		return arguments;
 	}
+	
 	public String Execute(){
 
 		return "Вызов выполнен";
 	}
+	
 }
