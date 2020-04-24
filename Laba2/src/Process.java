@@ -29,6 +29,10 @@ public class Process {
 
 		int sizeThread = threads.size();
 		int timeForThread = priority.getTime()/sizeThread;
+	
+		if(timeForThread < 1) {
+			timeForThread = 1;
+		}
 		
 		for( int i = 0; i < threads.size(); i++) {
 			Thread thread = threads.get(i);
